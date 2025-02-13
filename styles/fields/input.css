@@ -1,0 +1,33 @@
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  font: var(--body-sm);
+  background-color: var(--input-base);
+  padding: 0.75rem 1rem;
+
+  border: 1px solid transparent;
+
+  outline: 1px solid var(--input-stroke);
+}
+
+input {
+  height: 3rem;
+  color: var(--text-heading);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+input:focus-within {
+  border-color: var(--brand-light);
+}
+
+.text-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 1.3rem;
+}

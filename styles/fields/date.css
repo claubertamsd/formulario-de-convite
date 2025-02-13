@@ -1,0 +1,14 @@
+.flex-input-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem,1fr));
+  gap: 1rem;
+
+
+  input[type="datetime-local"]{
+  
+  
+    &::-webkit-calendar-picker-indicator{
+      opacity: 0;
+    }
+  }
+}
