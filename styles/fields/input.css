@@ -5,17 +5,44 @@ select {
   width: 100%;
   border-radius: 0.5rem;
   font: var(--body-sm);
+  color: var(--text-heading);
   background-color: var(--input-base);
   padding: 0.75rem 1rem;
 
   border: 1px solid transparent;
 
   outline: 1px solid var(--input-stroke);
+
+  &:invalid{
+    border: 1px solid var(--semantic-error);
+  }
+
+  &[required] + .error{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font: var(--text-sm);
+    margin-top: .15rem;
+  }
+
+  &:not(:focus):valid + .error{
+    display: none;
+  }
 }
 
 input {
   height: 3rem;
   color: var(--text-heading);
+
+
+}
+
+.error{
+  display: flex;
+  gap: .25rem;
+  span{
+    color: var(--semantic-error);
+  }
 }
 
 input:focus,
@@ -30,4 +57,43 @@ input:focus-within {
   flex-direction: column;
   gap: 12px;
   margin-top: 1.3rem;
+}
+
+.color-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.color-picker {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #2a2a3a; /* Bordas visíveis */
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Estiliza a área interna do input de cor */
+.color-picker::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+}
+
+.color-picker::-moz-color-swatch {
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+}
+
+.color-picker::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 50%;
+}
+
+.color-picker::-moz-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 50%;
 }
