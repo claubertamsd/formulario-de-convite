@@ -69,7 +69,12 @@ legend{
   font: var(--heading-sm);
   color: var(--text-heading);
 }
-
+.border{
+  width: 100%;
+  display: flex;
+  border: 1px solid var(--input-stroke);
+  margin-bottom: 1rem;
+}
 .flex{
   display: flex;
 }

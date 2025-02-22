@@ -4,7 +4,7 @@
 
 .cards-wrapper{
   display: grid;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(7.5rem,1fr));
   gap: 1rem;
 }

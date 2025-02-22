@@ -64,3 +64,8 @@ input:checked + .slider {
 .toggle input:checked ~ .mode-label::before {
   content: "Claro"; 
 }
+.toggle-upload{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}

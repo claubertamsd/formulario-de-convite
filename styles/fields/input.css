@@ -22,7 +22,7 @@ select {
     align-items: center;
     gap: .25rem;
     font: var(--text-sm);
-    margin-top: .15rem;
+    margin-top: .5rem;
   }
 
   &:not(:focus):valid + .error{
@@ -30,16 +30,26 @@ select {
   }
 }
 
+textarea{
+  margin-top: .5rem;
+}
+
+input[type="file"]{
+  position: relative;
+  opacity: 0;
+  inset: 0;
+  outline: none;
+  background-color: transparent
+}
+
 input {
   height: 3rem;
   color: var(--text-heading);
-
-
 }
 
 .error{
   display: flex;
-  gap: .25rem;
+
   span{
     color: var(--semantic-error);
   }
@@ -51,17 +61,27 @@ textarea:focus,
 input:focus-within {
   border-color: var(--brand-light);
 }
+.input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 1.3rem;
+}
 
 .text-input-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   margin-top: 1.3rem;
+
 }
 
 .color-wrapper {
   display: flex;
   gap: 10px;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .color-picker {

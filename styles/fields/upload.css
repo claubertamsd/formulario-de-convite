@@ -1,0 +1,40 @@
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+}
+
+.button-file-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.button-file {
+  display: flex;
+  align-items: center;
+  background-color: #2d2d2d;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.button-file svg {
+  margin-right: 8px;
+}
+
+.button-file label {
+  cursor: pointer;
+}
+
+.button-file-wrapper label {
+  margin-left: 10px;
+  color: #aaa;
+}
+
+input[type="file"] {
+  display: none;
+}
