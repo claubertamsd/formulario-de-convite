@@ -1,5 +1,4 @@
-@import url(fields/central.css);
-
+@import url(../styles/fields/index.css);
 form{
   margin-top: 2.5rem;
 }
